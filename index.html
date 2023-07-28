@@ -7,9 +7,32 @@
     <title>TrendyFashion</title>
     <link rel="icon" href="img/TFL.jpg">
     <style>
+        @media screen and (max-width: 600px) {
+            .not-mobile-message {
+                margin-top: 35%;
+                display: block;
+                text-align: center;
+                font-size: 18px;
+                padding: 20px;
+                color: black;
+                background-color: white;
+            }
+
+            .main-content {
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 600px) {
+            .not-mobile-message {
+                display: none;
+            }
+        }
+
         body {
             background-color: black;
-            color: white
+            color: white;
+            margin: 0; /* Reset the default margin for the body */
         }
 
         body header {
@@ -65,7 +88,6 @@
         .container {
             border: 2px solid none;
             margin-top: 50px;
-
             text-align: center;
         }
 
@@ -78,49 +100,52 @@
 </head>
 
 <body>
+    <!-- Message to display on mobile devices -->
+    <div class="not-mobile-message">
+        This webpage is not currently compatible with mobile devices. Please view it on a desktop or laptop for the best experience.
+    </div>
 
-    <header>
-        <div class="left">
-            <img src="img/TFL.jpg" alt="TrendyFashion" height="50px" width="60px" style="margin-left: 10px;">
-            <h5 class="hText">TrendyFashion</h5>
+    <!-- Your website's main content goes here -->
+    <div class="main-content">
+        <header>
+            <div class="left">
+                <img src="img/TFL.jpg" alt="TrendyFashion" height="50px" width="60px" style="margin-left: 10px;">
+                <h5 class="hText">TrendyFashion</h5>
+            </div>
+
+            <div class="mid">
+                <h2 class="hText">Fashion Friendly Website</h2>
+                <h4 class="mid" style="margin-left: -290px; position: absolute; text-align: center;">a website by shayan
+                </h4>
+            </div>
+
+            <div class="right"><a href="https://wa.me/+923492628909?" target="_blank" rel="noopener noreferrer">
+                    <h4>Contact Us</h4>
+                </a>
+                <!-- <a href=""><h4>Need Help</h4></a> -->
+            </div>
+        </header>
+
+        <div class="container">
+            <h3>
+                <hr>
+                CATEGORIES
+            </h3>
+            <div class="men">
+                <a href="men.html"><img src="img/men.jpg" alt="men fashion" height="400" width="250"></a> &nbsp;
+                <h4>MEN</h4>
+            </div>
+
+            <div class="women">
+                <a href="undercons.html"><img src="img/women.avif" alt="women fashion" height="400" width="250"></a>&nbsp;
+                <h4>WOMEN</h4>
+            </div>
+
+            <div class="kids">
+                <a href="undercons.html"><img src="img/kids.jpg" alt="kids fashion" height="400" width="250"></a>
+                <h4>KIDS</h4>
+            </div>
         </div>
-
-
-        <div class="mid">
-            <h2 class="hText">Fashion Friendly Website</h2>
-            <h4 class="mid" style="margin-left: -290px; position: absolute; text-align: center;">a website by shayan
-            </h4>
-        </div>
-
-
-        <div class="right"><a href="https://wa.me/+923492628909?" target="_blank" rel="noopener noreferrer">
-                <h4>Contact Us</h4>
-            </a>
-            <!-- <a href=""><h4>Need Help</h4></a> -->
-        </div>
-    </header>
-
-    <div class="container">
-        <h3>
-            <hr>
-            CATEGORIES
-        </h3>
-        <div class="men">
-            <a href="men.html"><img src="img/men.jpg" alt="men fashion" height="400" width="250"></a> &nbsp;
-            <h4>MEN</h4>
-        </div>
-
-        <div class="women">
-            <a href="undercons.html"><img src="img/women.avif" alt="women fashion" height="400" width="250"></a>&nbsp;
-            <h4>WOMEN</h4>
-        </div>
-
-        <div class="kids">
-            <a href="undercons.html"><img src="img/kids.jpg" alt="kids fashion" height="400" width="250"></a>
-            <h4>KIDS</h4>
-        </div>
-
-
     </div>
 </body>
 
