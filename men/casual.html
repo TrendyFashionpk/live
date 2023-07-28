@@ -7,6 +7,28 @@
     <title>TrendyFashion</title>
     <link rel="icon" href="TFL.jpg">
     <style>
+
+@media screen and (max-width: 600px) {
+            .not-mobile-message {
+                margin-top: 50%;
+                display: block;
+                text-align: center;
+                font-size: 18px;
+                padding: 20px;
+                color: black;
+                background-color: white;
+            }
+
+            .main-content {
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 600px) {
+            .not-mobile-message {
+                display: none;
+            }
+        }
         body {
             background-color: black;
             color: white
@@ -78,6 +100,13 @@
 </head>
 
 <body>
+
+    <div class="not-mobile-message">
+        Tilt the phone to see the content.
+        <img src="https://static.thenounproject.com/png/3293059-200.png" alt="instructions"> <br><br>
+        Make sure to turn on the Auto-Rotate Mode.
+    </div>
+    <div class="main-content">
     <header>
         <div class="left"><a href="https://trendyfashionpk.github.io/live/" alt="home"
                 style="text-decoration: none; color: white;">
@@ -138,6 +167,7 @@
         <h3>
             NO MORE ITEMS <br><br>
         </h3>
+    </div>
     </div>
 </body>
 
